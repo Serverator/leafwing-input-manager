@@ -575,7 +575,7 @@ impl<A: Actionlike> ActionState<A> {
             #[cfg(feature = "timing")]
             if button_data.state.released() {
                 button_data.timing.flip();
-                button_data.timing.coyote = false;
+                button_data.timing.coyote_available = true;
             }
 
             button_data.state.press();
@@ -796,7 +796,7 @@ impl<A: Actionlike> ActionState<A> {
         #[cfg(feature = "timing")]
         if action_data.update_state.released() {
             action_data.timing.flip();
-            action_data.timing.coyote = false;
+            action_data.timing.coyote_available = true;
         }
 
         action_data.state.press();
