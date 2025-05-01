@@ -21,6 +21,8 @@ pub struct Timing {
     pub current_duration: Duration,
     /// The [`Duration`] for which the button was pressed or released before the state last changed.
     pub previous_duration: Duration,
+    /// If coyote was already activated
+    pub coyote: bool,
 }
 
 impl Timing {
