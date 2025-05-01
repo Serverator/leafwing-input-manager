@@ -31,7 +31,7 @@ impl Timing {
         instant_started: None,
         current_duration: Duration::ZERO,
         previous_duration: Duration::ZERO,
-        coyote: false,
+        coyote: true,
     };
 }
 
